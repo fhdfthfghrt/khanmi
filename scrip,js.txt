@@ -1,0 +1,13 @@
+ javascript
+document.getElementById('loginForm').addEventListener('submit', function(e) {
+e.preventDefault();
+  const username = document.getElementById('username').value;
+  const password = document.getElementById('password').value;
+  const errorMsg = document.getElementById('errorMsg');
+
+  if (username === 'Farooq1022' && password === 'arif1022') {
+    window.location.href = 'home.html';
+  } else {
+    errorMsg.textContent = 'Invalid credentials. Please try again.';
+  }
+});

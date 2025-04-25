@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#profile">My Profile</a></li>
+      <li><a href="#qualifications">My Qualifications</a></li>
+      <li><a href="#contact">My Contact Information</a></li>
+      <li><a href="#photos">My Photos</a></li>
+      <li><a href="#friends">My Dear Friends</a></li>
+    </ul>
+  </nav>
+
+  <section id="profile">
+    <h2>My Profile</h2>
+    <textarea placeholder="Write about yourself..."></textarea>
+    <input type="file" accept="image/*" />
+  </section>
+
+  <section id="qualifications">
+    <h2>My Qualifications</h2>
+    <textarea placeholder="List your qualifications..."></textarea>
+  </section>
+
+  <section id="contact">
+    <h2>My Contact Information</h2>
+    <form>
+      <label>Address:</label>
+      <input type="text" />
+      <label>Mobile Number:</label>
+      <input type="tel" />
+      <label>Email:</label>
+      <input type="email" />
+      <label>WhatsApp:</label>
+      <input type="tel" />
+    </form>
+  </section>
+
+  <section id="photos">
+    <h2>My Photos</h2>
+ <input type="file" accept="image/*" multiple />
+    <!-- Display uploaded photos here -->
+  </section>
+
+  <section id="friends">
+    <h2>My Dear Friends</h2>
+    <div class="friends-gallery">
+      <!-- Repeat this block for each friend -->
+      <div class="friend">
+        <input type="file" accept="image/*" />
+        <textarea placeholder="Write about your friend..."></textarea>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
